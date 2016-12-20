@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/bg2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Login"
+            android:textColorHint="#ffff"
+            android:textColor="#ffff"
+            android:layout_marginLeft="100dp"
+            android:layout_toLeftOf="@+id/AdminRadioButtonID"
+            android:layout_centerVertical="true"/>
+
+
+        <ImageView
+            android:id="@+id/AdminRadioButtonID"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/administrator_icon_1"
+            android:layout_alignParentRight="true"
+            />
+        '</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lenborro_logo_transparent"
+            android:id="@+id/imageView" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/EmailID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:hint="Email Address"
+            android:textColor="#bcee68"
+            android:textColorHint="#bcee68"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/PasswordID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:textColor="#bcee68"
+            android:textColorHint="#bcee68"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton android:id="@+id/LenderRadioButtonID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Lender"
+                android:textColor="#000000"
+                android:onClick="LenderRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/BorrowerRadioButtonID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15dp"
+
+                android:text="Borrower"
+                android:onClick="BorrowerRadioButtonClicked"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.95">
+
+        <Button
+            android:id="@+id/loginButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="50dp"
+            android:text="Sign in"
+            android:onClick="LoginButtonClicked"
+            android:background="@drawable/custom_button"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.95">
+
+        <Button
+            android:id="@+id/signUpButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="50dp"
+            android:text="Register"
+            android:onClick="SignUpButtonClicked"
+            android:background="@drawable/custom_button"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

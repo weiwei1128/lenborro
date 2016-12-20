@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Offer Details"
+        android:textSize="22dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/LoanOfferID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LoanAmountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/InterestRateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/RepaymentDurationID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/TotalRepaymentAmountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/MonthlyPaymentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lender Details: "
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/LenderFirstNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LenderLastNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LenderDateOfBirthID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/LenderEmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LenderPhoneNumberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/LenderSSNID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LenderAddressID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LenderBankNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <TextView
+        android:id="@+id/LenderIBANID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Apply"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="ApplyButtonClicked"
+        />
+
+
+</LinearLayout>

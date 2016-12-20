@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/LoanAmountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loan Amount (EUR)"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+
+
+    <EditText
+        android:id="@+id/InterestRateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Interest Rate (%)"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+
+
+
+
+    <EditText
+        android:id="@+id/RepaymentDurationID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rapayment Duration (Months)"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

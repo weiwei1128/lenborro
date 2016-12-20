@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    >
+
+
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="14">
+
+
+
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Sign Up"
+           android:textColor="#fff"
+           android:textSize="25dp"
+           android:layout_gravity="center"
+           android:gravity="center"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+     <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="155dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+         android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profilePhotoID"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/icon_profile_avator"
+            />
+         <Button
+             android:text="Upload profile picture"
+             android:layout_width="fill_parent"
+             android:layout_height="35dp"
+             android:background="#FFFFFF"
+             android:textColor="#467500"
+             android:layout_weight="1"
+             android:gravity="center_horizontal"
+             android:onClick="ProfilePhotoButtonClicked"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="155dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/FirstNameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:hint="First Name"
+            android:textColor="#467500"
+            android:textColorHint="#73BF00"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/LastNameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="Last Name"
+            android:textColor="#467500"
+            android:textColorHint="#73BF00"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/dateOfBirthID"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:textSize="20dp"
+                    android:background="#FFFFFF"
+                    android:hint="Date Of Birth"
+                    android:textColor="#467500"
+                    android:textColorHint="#73BF00"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/DatePickerButtonID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="Enter DOB"
+                    android:textColor="#73BF00"
+                    android:onClick="showDatePickerDialog"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/EmailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:hint="Email Address"
+            android:textColor="#467500"
+            android:textColorHint="#73BF00"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/PasswordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Password"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/ConfirmPasswordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Confirm Password"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/PhoneNumberID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Phone Number"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/SocialSecurityNumberID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Social Security Number"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/AddressID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Address"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:padding="5dp"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/BankNameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Bank Name"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:padding="5dp"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+            <EditText
+                android:id="@+id/IBANID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:hint="IBAN"
+                android:padding="5dp"
+                android:textColor="#467500"
+                android:textColorHint="#73BF00"
+                android:textSize="20dp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:layout_marginTop="5dp"
+         >
+
+
+     </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9D9D9D9D"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/BankStatementPhotoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_margin="3dp"
+                android:src="@drawable/bank_statment"
+
+
+                />
+            <Button
+                android:text="Upload Bank Statment Photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:id="@+id/BankStatementPhotoButtonID"
+                android:textColor="#467500"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="BankStatementButtonClicked"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IDCardPhotoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:src="@drawable/id_card_1"
+
+
+                />
+            <Button
+                android:text="Upload ID Card"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:id="@+id/IDCardButtonID"
+
+                android:textColor="#467500"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:onClick="IDCardButtonClicked"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1">
+
+
+     </LinearLayout>
+     <RadioGroup
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="2">
+
+         <RadioButton android:id="@+id/LenderRadioButtonID"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="25dp"
+             android:text="Lender"
+             android:textColor="#bcee68"
+             android:onClick="LenderRadioButtonClicked"/>
+
+         <RadioButton android:id="@+id/BorrowerRadioButtonID"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="25dp"
+             android:text="Borrower"
+             android:textColor="#bcee68"
+             android:onClick="BorrowerRadioButtonClicked"/>
+
+
+
+     </RadioGroup>
+
+
+     <Button
+         android:id="@+id/RegisterButtonID"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:text="Register"
+         android:background="#bcee68"
+         android:padding="5dp"
+         android:textSize="20dp"
+         android:onClick="RegisterButtonClicked"/>
+
+ </LinearLayout>
+
+
+</ScrollView>
